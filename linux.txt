@@ -1,0 +1,10 @@
+#conda创建环境
+conda create -n your_env_name python=x.x
+
+#列出环境所有包
+pip list
+
+
+
+
+
