@@ -4,7 +4,11 @@ conda create -n your_env_name python=x.x
 #列出环境所有包
 pip list
 
+arch 命令查看机器的架构
 
+uname -a 查看linux版本
+
+nvcc -V 或 nvidia-smi 查看CUDA版本
 
 
 
