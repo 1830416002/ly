@@ -1,8 +1,13 @@
 #conda创建环境
 conda create -n your_env_name python=x.x
+#删除环境
+conda remove -n your_env_name(虚拟环境名称) --all
+#删除不需要的包
+conda remove --name your_env_name  package_name
 
 #列出环境所有包
 pip list
+conda list
 
 arch 命令查看机器的架构
 
