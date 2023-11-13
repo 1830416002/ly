@@ -18,3 +18,5 @@ nvcc -V 或 nvidia-smi 查看CUDA版本
 
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu110
 #最后的cu110代表cuda版本11.0
+pip install torch==1.9.0+cu110 torchvision==0.10.0+cu110 torchaudio==0.9.0+cu110 -f https://download.pytorch.org/whl/cu110.html
+pip install pytorch-lightning
