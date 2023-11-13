@@ -21,3 +21,11 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 pip install pytorch-lightning==1.4.9 torch==1.7.1+cu110 -f https://download.pytorch.org/whl/torch_stable.html
 #最后的cu110代表cuda版本11.0
 
+import torch
+ 
+if torch.cuda.is_available():
+    print("CUDA is available")
+else:
+    print("CUDA is not available")
+import pytorch_lightning as pl
+print(pl._C.has_cuda) # will print True if GPU is supported, False otherwise
