@@ -29,3 +29,6 @@ else:
     print("CUDA is not available")
 import pytorch_lightning as pl
 print(pl._C.has_cuda) # will print True if GPU is supported, False otherwise
+
+
+conda create --name ly_torch_cpu python=3.9
