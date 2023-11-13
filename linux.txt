@@ -30,5 +30,6 @@ else:
 import pytorch_lightning as pl
 print(pl._C.has_cuda) # will print True if GPU is supported, False otherwise
 
-
+#cpu版本
 conda create --name ly_torch_cpu python=3.9
+pip install pytorch-lightning
