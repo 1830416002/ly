@@ -1,5 +1,6 @@
 #conda创建环境
 conda create -n your_env_name python=x.x
+conda create --name ly_torch python=3.8
 #删除环境
 conda remove -n your_env_name(虚拟环境名称) --all
 #删除不需要的包
