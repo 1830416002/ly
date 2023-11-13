@@ -20,5 +20,4 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 上述命令给我安装了1.7.1版本的gpu的torch
 pip install pytorch-lightning==1.4.9 torch==1.7.1+cu110 -f https://download.pytorch.org/whl/torch_stable.html
 #最后的cu110代表cuda版本11.0
-pip install torch==1.9.0+cu110 torchvision==0.10.0+cu110 torchaudio==0.9.0+cu110 -f https://download.pytorch.org/whl/cu110.html
-pip install pytorch-lightning
+
