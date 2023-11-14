@@ -33,3 +33,27 @@ print(pl._C.has_cuda) # will print True if GPU is supported, False otherwise
 #cpu版本
 conda create --name ly_torch_cpu python=3.9
 pip install pytorch-lightning
+
+#最终命令
+pip install pytorch-lightning==1.4.9 torch==1.7.1+cu110 -f https://download.pytorch.org/whl/torch_stable.html
+导入包报错：
+ImportError: cannot import name 'get_num_classes' from 'torchmetrics.utilities.data'
+重装torchmetrics
+安装的torchmetrics版本与代码要求的版本不一致。
+pip uninstall torchmetrics
+pip install torchmetrics==0.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
