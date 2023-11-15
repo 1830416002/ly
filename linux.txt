@@ -45,7 +45,27 @@ pip uninstall torchmetrics
 pip install torchmetrics==0.5
 
 
+2023-11-15
+1、binn环境装shap依赖包冲突
+conda create -n binn2 python=3.9
+同时安装binn：
+pip install pytorch-lightning==1.4.9 torch==1.7.1+cu110 binn -f https://download.pytorch.org/whl/torch_stable.html
 
+重装torchmetrics
+安装的torchmetrics版本与代码要求的版本不一致。
+pip uninstall torchmetrics
+pip install torchmetrics==0.5
+
+
+
+importance_df = explainer.explain(test_data, background_data)
+报错：
+ModuleAttributeError: 'Linear' object has no attribute 'register_full_backward_hook'
+Shap0.43版本不支持pytorch 1.7.1+cu110
+pytorch 1.7.1+cu110最高支持shap0.39版本
+使用pip安装因为环境依赖失败
+直接修改shap的源代码，源代码位置：/home/zjliang/users/wtt/anaconda3/envs/binn2/lib/python3.9/site-packages/shap/explainers/_deep/deep_pytorch.py
+该文件的第83行register_full_backward_hook函数改为register_backward_hook，因为pytorch 1.7.1+cu110对应的函数就为register_backward_hook
 
 
 
