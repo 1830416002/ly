@@ -36,6 +36,7 @@ pip install pytorch-lightning
 
 #最终命令
 pip install pytorch-lightning==1.4.9 torch==1.7.1+cu110 -f https://download.pytorch.org/whl/torch_stable.html
+pip install pytorch-lightning==1.4.9 torch==1.7.1+cu110 binn -f https://download.pytorch.org/whl/torch_stable.html
 导入包报错：
 ImportError: cannot import name 'get_num_classes' from 'torchmetrics.utilities.data'
 重装torchmetrics
